@@ -1,0 +1,236 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+hr{
+	border-width: 5px;
+}
+#inline{
+	display:inline;
+}
+#block{
+	display:block;
+}
+.logo{
+	height: 400px;
+	width: 100%;
+	background-image: url("leaves.jpg");
+	border-radius: 10px;
+}
+.logo img{
+	padding-top:10px;
+	padding-left:38%;
+}
+.logo p{
+	font-size: 20px;
+	font-style: georgia;
+	text-align: center;
+	color:blue;
+	font-weight: 5px;
+}
+.link_page{
+	width: 100%;
+	max-height: 60px;
+	text-align: center;
+	display:inline-block;
+	margin-right: 3px;
+	word-spacing: 50px;
+	border-style: outset;
+	column-count:3;
+	border-radius: 10px;
+	background-color:#ffcccc; 
+
+}
+.link_hover a {
+	margin-top: 3px;
+	margin-right: 50px;
+	border-right-style: solid;
+	border-right-color: #3366cc;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+	background-color:#33ffff;
+	letter-spacing: 3px;
+	box-shadow: 3px 3px 5px black;
+	color:black;
+	font-size: 22px;
+	border-color: solid black;
+	text-decoration: none;
+	text-align: center;
+}
+.link_hover:hover a{
+	background-color:#33ff66;
+}
+.class-nav {
+	border-style:solid;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	box-shadow: 7px 7px 7px #99ff99;
+	background-color: #ccffcc;
+	display:inline block;
+	position: relative;
+}
+.class_links a{
+	padding-top: 25px;
+	padding-bottom: 14px;
+	border-style:solid;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	box-shadow: 7px 7px 7px;
+	border-bottom-color: #ccffcc;
+	display: block;
+	text-decoration: none;
+	font-size: 24px;
+	text-align: center;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.dropbtn{
+	font-size: 20px;
+	float: left;
+    width: 210px;
+    height: 50px;
+	border-style: outset;
+	background-color: #99ff99;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-color: #66ff66;
+	border-bottom-color: #66ff66;
+	box-shadow: 5px 5px 5px #cccccc;
+	position: relative;	
+	cursor:pointer;
+}
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+.dropdown-content{
+	max-height: 5px;
+	margin-top: 55px;
+	 display: none;
+	 position:absolute;
+	 width:210px;
+	 z-index: 1;
+}
+.dropdown-content a{
+	color:white;
+	font-size: 20px;
+	text-align:center;
+	text-decoration:none;
+	padding: 12px 16px;
+	display:block;
+	border-style:solid;
+	border-color: #999999;
+	background-color: grey;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content a:hover{
+	background-color: #999999;
+}
+
+.block-content button{
+	float: left;
+	background-color: #99ffcc;
+	font-size: 20px;
+	display:block;
+	text-align: center;
+	overflow: auto;
+}
+.block-content a{
+	display:flex;
+}
+.main_page{
+	width: 90%;
+	height: auto;
+	margin-top:0px;
+	float:right;
+	margin-right: 25px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #99ffcc;
+	text-align: center;
+	box-shadow: 10px 10px 5px #99ffcc;
+	position: relative;
+}
+.main_page img{
+	padding-right: 30px;
+}
+.main_page p{
+	margin-left: 10%;
+	margin-right:10%;
+	width: 80%;
+	border-style: solid;
+	border-width: 0px;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 1.5;
+}
+p{
+	font-size: 20px;
+	text-align: center;
+}
+h3{
+	text-decoration: underline;
+}
+.main_page span{
+	color:#00cc00;
+}
+.NCERT_textbooks button{
+	background-color: #99ffcc;
+	font-size: 20px;
+	margin-top:10px;
+	display:inline;
+	text-align: center;
+}
+.dropbtn:hover{
+	background-color: #66ff66;
+}
+.footer{
+	column-count:3;
+	color:white;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	bottom:0;
+	height:200px;
+	padding: 3% 3%;
+	padding-bottom: 0px;
+	border-style: solid;
+	background-color: #333333;
+}
+.right_border{
+	border-style: solid;
+	border-left-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-color: white;
+	height: 180px;
+}
+.fa-instagram {
+	padding-top: 30px;
+  color: white;
+}
+.center{
+	width: 500px;
+	height: 100px;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	margin-left:30%;
+	margin-top:15%;
+	border-style: solid;
+	border-color: green;
+	text-align: center;
+	text-decoration: none;
+}
+@media(max-width: 600px){
+		 .logo img {
+			padding-left: 34%;
+	}
+}
