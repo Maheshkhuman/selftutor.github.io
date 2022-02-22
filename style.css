@@ -3,6 +3,7 @@
 	padding: 0;
 }
 hr{
+	width: 100%;
 	border-width: 5px;
 }
 #inline{
@@ -16,38 +17,39 @@ hr{
 	width: 100%;
 	background-image: url("leaves.jpg");
 	border-radius: 10px;
+	float: none;
 }
 .logo img{
 	padding-top:10px;
 	padding-left:38%;
 }
 .logo p{
-	font-size: 20px;
+	float: none;
+	font-size: 24px;
 	font-style: georgia;
 	text-align: center;
-	color:blue;
+	color:black;
 	font-weight: 5px;
 }
 .link_page{
-	width: 100%;
-	max-height: 60px;
-	text-align: center;
-	display:inline-block;
-	margin-right: 3px;
-	word-spacing: 50px;
-	border-style: outset;
-	column-count:3;
-	border-radius: 10px;
-	background-color:#ffcccc; 
+	width:100%;
+	height:50px;
+	background-color:#99ff99;
+	display: flex; 
+	justify-content:space-between;
 
 }
-.link_hover a {
-	margin-top: 3px;
-	margin-right: 50px;
+.link_hover{
+	flex-basis:33.33%;
+	height: 50px;
+}
+.link_hover a { 
+	border-style:solid;
+	margin-left: 40px;
+	margin-top:10px;
 	border-right-style: solid;
 	border-right-color: #3366cc;
 	border-radius: 5px;
-	padding: 5px 5px 5px 5px;
 	background-color:#33ffff;
 	letter-spacing: 3px;
 	box-shadow: 3px 3px 5px black;
@@ -56,6 +58,7 @@ hr{
 	border-color: solid black;
 	text-decoration: none;
 	text-align: center;
+	display: inline;
 }
 .link_hover:hover a{
 	background-color:#33ff66;
@@ -90,6 +93,7 @@ hr{
   clear: both;
 }
 .dropbtn{
+	margin-left: 10px;
 	font-size: 20px;
 	float: left;
     width: 210px;
@@ -146,17 +150,17 @@ hr{
 	display:flex;
 }
 .main_page{
-	width: 90%;
+	width: 100%;
 	height: auto;
-	margin-top:0px;
+	margin-top:5px;
 	float:right;
+	right: 0;
 	margin-right: 25px;
 	border-style: outset;
+	border-top-style: none;
 	border-width: 5px;
 	border-color: #99ffcc;
 	text-align: center;
-	box-shadow: 10px 10px 5px #99ffcc;
-	position: relative;
 }
 .main_page img{
 	padding-right: 30px;
@@ -172,7 +176,7 @@ hr{
 	line-height: 1.5;
 }
 p{
-	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
 }
 h3{
@@ -192,18 +196,17 @@ h3{
 	background-color: #66ff66;
 }
 .footer{
-	column-count:3;
+	display: flex;
 	color:white;
 	text-decoration: none;
 	text-align: center;
-	width: 100%;
-	left: 0;
-	bottom:0;
-	height:200px;
+	width: auto;
+	height:auto;
 	padding: 3% 3%;
 	padding-bottom: 0px;
 	border-style: solid;
 	background-color: #333333;
+	justify-content:space-between;
 }
 .right_border{
 	border-style: solid;
@@ -212,6 +215,8 @@ h3{
 	border-bottom-style: none;
 	border-right-color: white;
 	height: 180px;
+	flex-basis:33.33%;
+
 }
 .fa-instagram {
 	padding-top: 30px;
@@ -229,8 +234,173 @@ h3{
 	text-align: center;
 	text-decoration: none;
 }
-@media(max-width: 600px){
-		 .logo img {
-			padding-left: 34%;
+.chapter-lecture{
+	width: 100%;
+	height: 700px; 
+}
+@media only screen and (max-width: 600px){
+	*{
+		margin: 0;
+		padding:0;
 	}
+	.logo{
+	height: 400px;
+	width: 500px;
+	background-image: url("leaves.jpg");
+	border-radius: 10px;
+	float: none;
+}
+	.logo a{
+		padding-right: 30px;
+		float:none;
+	}
+	.logo img{
+	width: 300px;
+	height: 300px;
+	padding-left: 95px;
+}
+.logo p{
+	float: none;
+	font-size: 24px;
+	font-style: georgia;
+	text-align: center;
+	color:#0099ff;
+	font-weight: 5px;
+}
+.link_page{
+	width:500px;
+	height:50px;
+	background-color:#99ff99;
+	display: flex; 
+	justify-content:space-between;
+
+}
+.link_hover{
+	flex-basis:33.33%;
+	height: 50px;
+}
+.link_hover a { 
+	border-style:solid;
+	margin-right: 10px;
+	margin-left:5px; 
+	margin-top:10px;
+	border-right-style: solid;
+	border-right-color: #3366cc;
+	border-radius: 5px;
+	background-color:#33ffff;
+	letter-spacing: 3px;
+	box-shadow: 3px 3px 5px black;
+	color:black;
+	font-size: 22px;
+	border-color: white;
+	text-decoration: none;
+	text-align: center;
+	display: inline;
+}
+.link_hover:hover a{
+	background-color:#33ff66;
+}
+.dropdown{
+	position:relative;
+	display:flex;
+}
+.dropbtn{
+	margin-left: 10px;
+	font-size: 20px;
+	float:none;
+	margin-left: 72px;
+    width: 500px;
+    height: 50px;
+	border-style: outset;
+	background-color: #99ff99;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-color: #66ff66;
+	border-bottom-color: #66ff66;
+	box-shadow: 5px 5px 5px #cccccc;
+	position: relative;	
+	cursor:pointer;
+	display: inline-block;
+}
+.main_page{
+	width: 490px;
+	height: auto;
+	margin-top:5px;
+	float:none;
+	border-style: inset;
+	border-top-style: none;
+	border-width: 2px;
+	border-color: #99ffcc;
+	text-align: center;
+}
+.main_page img{
+	padding-right: 25px;
+}
+.main_page p{
+	margin-left: 10%;
+	margin-right:10%;
+	width: 80%;
+	border-style: solid;
+	border-width: 0px;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 1.5;
+}
+p{
+	font-size: 24px;
+	text-align: center;
+}
+.NCERT_textbooks button{
+	background-color: #99ffcc;
+	font-size: 20px;
+	margin-top:10px;
+	text-align: center;
+}
+.NCERT_textbooks .dropbtn{
+	margin-left: 120px;
+	margin-top:3px;
+	font-size: 20px;
+	float: left;
+    width: 210px;
+    height: 50px;
+    display: inline-block;
+	border-style: outset;
+	background-color: #99ff99;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-color: #66ff66;
+	border-bottom-color: #66ff66;
+	box-shadow: 5px 5px 5px #cccccc;
+	position: relative;	
+	cursor:pointer;
+}
+.footer{
+	display: flex;
+	color:white;
+	text-decoration: none;
+	text-align: center;
+	width: 460px;
+	height:auto;
+	padding: 3% 3%;
+	border-style: solid;
+	background-color: #333333;
+	justify-content:space-between;
+}
+.right_border{
+	border-style: solid;
+	border-left-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-color: white;
+	flex-basis:33.33%;
+	display:inline;
+	height: auto;
+}
+.right_border p{
+	font-size: 14px;
+}
+.fa-instagram {
+	padding-top: 30px;
+  color:blue; 
+}
 }
